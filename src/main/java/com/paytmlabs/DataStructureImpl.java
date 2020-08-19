@@ -29,7 +29,7 @@ public class DataStructureImpl implements DataStructure {
     private final int n;
 
     /**
-     * The <tt>ArrayList</tt> into which the elements of this {@link DataStructure} are stored.
+     * The <tt>ArrayList</tt> into which the elements of this {@link DataStructure} are stored
      */
     private final List<Double> list = new ArrayList<>();
 
@@ -49,7 +49,7 @@ public class DataStructureImpl implements DataStructure {
      * Gets moving average of n last elements added by dividing sum with n (even if n <tt>DataStructure</tt> size).
      * For example: DataStructureImpl[0.0, 1.0] (size = 2), (sum = 1), (n = 5)
      * (moving average != 1.0 / 2), (moving average == 1.0 / 5)
-     * (sum is updated prior to adding elements to {@link DataStructure} if n - 1 <= list size.)
+     * (sum is updated prior to adding elements to {@link DataStructure} if n - 1 <= list size)
      *
      * @return moving average of last added n elements
      */
@@ -60,7 +60,7 @@ public class DataStructureImpl implements DataStructure {
 
     /**
      * Adds the specified {@link Double} element to the end of {@link DataStructure}.
-     * (sum is updated prior to adding elements to {@link DataStructure} if list size > n - 1.)
+     * (sum is updated prior to adding elements to {@link DataStructure} if list size > n - 1)
      * For example: DataStructureImpl[1.0, 2.0, 3.0, 4.0, 5.0] (d = 6.0), (n = 5)
      * (sum = 21 - 1) as (size = 5) > (n - 1 = 4)
      *
